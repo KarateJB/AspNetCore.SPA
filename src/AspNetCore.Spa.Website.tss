@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\AspNetCore.Spa\AspNetCore.Spa.Website\Program.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\AspNetCore.Spa\AspNetCore.Spa.Website\webpack.config.js</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\AspNetCore.Spa\AspNetCore.Spa.Website\Controllers\HomeController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\AspNetCore.Spa\AspNetCore.Spa.Website\package.json</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\AspNetCore.Spa\AspNetCore.Spa.Website\Controllers\SampleDataController.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>
