@@ -13,7 +13,7 @@ describe('LoginComponent', () => {
         TestBed.compileComponents();
     });
 
-    it(`should have as title 'app works!'`, async(() => {
+    it(`should have as title 'Login!'`, async(() => {
         const fixture = TestBed.createComponent(LoginComponent);
         const app = fixture.debugElement.componentInstance;
         console.log('Actuaal : ' + app.title);
