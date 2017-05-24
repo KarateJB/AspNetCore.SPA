@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using JSNLog;
+using NLog.Extensions.Logging;
+using NLog.Web;
 
 namespace AspNetCore_Spa_Website
 {
@@ -35,8 +38,25 @@ namespace AspNetCore_Spa_Website
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            #region NLog
+            //add NLog to ASP.NET Core
+            loggerFactory.WithFilter(new FilterLoggerSettings{
+                    { "Microsoft", LogLevel.Warning },
+                    { "System", LogLevel.None },
+                    { "Default", LogLevel.Debug }
+            }).AddNLog();
+
+            env.ConfigureNLog("NLog.config");
+
+            #endregion
+
+            #region JSNLog
+            // Configure JSNLog
+            // See jsnlog.com/Documentation/Configuration
+            var jsnlogConfiguration = new JsnlogConfiguration();
+            app.UseJSNLog(new LoggingAdapter(loggerFactory), jsnlogConfiguration);
+            #endregion
+
 
             if (env.IsDevelopment())
             {

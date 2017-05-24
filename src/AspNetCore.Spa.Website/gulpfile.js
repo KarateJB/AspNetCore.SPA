@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var rename = require('gulp-rename');
 var server = require('karma').Server;
 var root_path = {
     webroot: "./wwwroot/"
@@ -45,6 +46,13 @@ gulp.task('copy-jsnlog', function () {
     }).pipe(gulp.dest(root_path.packageLib + '/jsnlog/'));
 });
 
+gulp.task('copy-jsnlog-typing', function () {
+    return gulp.src(root_path.nmSrc + "/jsnlog/Definitions/jl.d.ts", {
+        base: root_path.nmSrc + '/jsnlog/Definitions/'
+    }).pipe(rename("jsnlog.d.ts")).pipe(gulp.dest(root_path.packageLib + '/typings/'));
+});
+
+
 
 /*
  *Tasks
@@ -62,5 +70,6 @@ gulp.task("copy-all", [
     "copy-fa-fonts",
     "copy-sweetalert2",
     "copy-ng2-toastr",
-    "copy-jsnlog"
+    "copy-jsnlog", 
+    "copy-jsnlog-typing"
 ]);
