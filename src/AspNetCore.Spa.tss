@@ -2,42 +2,7 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\app\app.module.ts</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\controllers\sampledatacontroller.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\controllers\homecontroller.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\app\components\navmenu\navmenu.component.html</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\views\home\index.cshtml</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\app\components\app\app.component.html</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\app\components\login\login.component.html</string>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetCore.Spa.Website\ClientApp\app\components\login\login.component.spec.ts</string>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\app\components\login\login.component.ts</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\app\routes\app.route.ts</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\package.json</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\test\karma.conf.js</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetcore.spa.website\clientapp\app\components\counter\counter.component.spec.ts</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetCore.Spa.Website\gulpfile.js</string>
+      <string>原始檔控制總管 - 已中斷連接</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
