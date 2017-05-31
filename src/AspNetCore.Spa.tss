@@ -4,5 +4,11 @@
     <ArrayOfString>
       <string>原始檔控制總管 - 已中斷連接</string>
     </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Service\Service\IGuidService.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Service\Service\GuidService.cs</string>
+    </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
