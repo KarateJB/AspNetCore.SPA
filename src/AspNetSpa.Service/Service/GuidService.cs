@@ -1,4 +1,5 @@
 using System;
+using AspNetSpa.Infra.Utility;
 
 namespace AspNetSpa.Service
 {
@@ -7,13 +8,20 @@ namespace AspNetSpa.Service
     /// </summary>
     public class GuidService : IGuidService, IGuidServiceTransient, IGuidServiceScoped, IGuidServiceSingleton, IGuidServiceSingletonInstance
     {
-        public GuidService(Guid guid)
+        public GuidService(string title, Guid? guid = null)
         {
-            if (!guid.Equals(Guid.Empty))
-                this.Id = guid;
+            this.Title = title;
+
+            if (guid != null && !guid.Equals(Guid.Empty))
+                this.Id = (Guid)guid;
             else
                 this.Id = Guid.NewGuid();
+
+            LogUtility.Logger.Warn($"{title} : completed constructor.");
         }
+
+        public string Title { get; set; }
         public Guid Id { get; set; }
+
     }
 }

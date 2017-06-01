@@ -1,4 +1,14 @@
 {
     "angulardoc.repoId": "e8cfb007-2f68-489b-a160-f4dc45ee74ba",
-    "angulardoc.lastSync": 0
+    "angulardoc.lastSync": 0,
+    "files.exclude": {
+        "**/.git": true,
+        "**/bin/": true,
+        "**/obj/": true,
+        "**/node_modules/": true,
+        "**/*.js.map": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    }
 }

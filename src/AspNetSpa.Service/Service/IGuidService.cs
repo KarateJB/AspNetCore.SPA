@@ -4,6 +4,7 @@ namespace AspNetSpa.Service
 {
     public interface IGuidService
     {
+        string Title {get;set;}
         Guid Id {get;set;}
     }
 

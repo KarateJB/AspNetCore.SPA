@@ -1,13 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <!--<TargetFramework>netcoreapp1.1</TargetFramework>-->
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NLog.Extensions.Logging" Version="1.0.0-rtm-beta5" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AspNetSpa.Infra\AspNetSpa.Infra.csproj" />
   </ItemGroup>
 </Project>

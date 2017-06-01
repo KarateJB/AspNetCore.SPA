@@ -36,6 +36,11 @@ namespace AspNetSpa_Website
             // services.AddScoped<IGuidServiceScoped, GuidService>();
             // services.AddSingleton<IGuidServiceSingleton, GuidService>();
             // services.AddSingleton<IGuidServiceSingletonInstance>(new GuidService(Guid.Empty));
+
+            services.AddTransient<IGuidServiceTransient>(provider => new GuidService(title:"Transient"));
+            services.AddScoped<IGuidServiceScoped>(provider => new GuidService(title:"Scoped"));
+            services.AddSingleton<IGuidServiceSingleton>(provider => new GuidService(title:"Singleton"));
+            services.AddSingleton<IGuidServiceSingletonInstance>(new GuidService("Instance", Guid.Empty));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

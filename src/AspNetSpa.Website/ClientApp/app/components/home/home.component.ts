@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
     constructor(logService: LogService){
-        logService.debug("jsnlog works!");
+        // logService.debug("jsnlog works!");
     }
 }
