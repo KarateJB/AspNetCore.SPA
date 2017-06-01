@@ -7,6 +7,9 @@ using Microsoft.Extensions.Logging;
 using JSNLog;
 using NLog.Extensions.Logging;
 using NLog.Web;
+using AspNetSpa.Service;
+using System;
+
 namespace AspNetSpa_Website
 {
     public class Startup
@@ -28,6 +31,11 @@ namespace AspNetSpa_Website
         {
             // Add framework services.
             services.AddMvc();
+
+            // services.AddTransient<IGuidServiceTransient, GuidService>();
+            // services.AddScoped<IGuidServiceScoped, GuidService>();
+            // services.AddSingleton<IGuidServiceSingleton, GuidService>();
+            // services.AddSingleton<IGuidServiceSingletonInstance>(new GuidService(Guid.Empty));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
