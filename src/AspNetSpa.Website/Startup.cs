@@ -9,6 +9,8 @@ using NLog.Extensions.Logging;
 using NLog.Web;
 using AspNetSpa.Service;
 using System;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetSpa_Website
 {
@@ -30,22 +32,32 @@ namespace AspNetSpa_Website
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc((options) =>
+                options.CacheProfiles.Add("default", new CacheProfile()
+                {
+                    Duration = 60,
+                    Location = ResponseCacheLocation.Client
+                })
+            );
+            services.AddResponseCaching();
+            services.AddMemoryCache();
 
             // services.AddTransient<IGuidServiceTransient, GuidService>();
             // services.AddScoped<IGuidServiceScoped, GuidService>();
             // services.AddSingleton<IGuidServiceSingleton, GuidService>();
             // services.AddSingleton<IGuidServiceSingletonInstance>(new GuidService(Guid.Empty));
 
-            services.AddTransient<IGuidServiceTransient>(provider => new GuidService(title:"Transient"));
-            services.AddScoped<IGuidServiceScoped>(provider => new GuidService(title:"Scoped"));
-            services.AddSingleton<IGuidServiceSingleton>(provider => new GuidService(title:"Singleton"));
+            services.AddTransient<IGuidServiceTransient>(provider => new GuidService(title: "Transient"));
+            services.AddScoped<IGuidServiceScoped>(provider => new GuidService(title: "Scoped"));
+            services.AddSingleton<IGuidServiceSingleton>(provider => new GuidService(title: "Singleton"));
             services.AddSingleton<IGuidServiceSingletonInstance>(new GuidService("Instance", Guid.Empty));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.UseExceptionHandler("/Home/Error");
+
             // loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             // loggerFactory.AddDebug();
 
@@ -69,10 +81,13 @@ namespace AspNetSpa_Website
             #endregion
 
 
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions {
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                {
                     HotModuleReplacement = true
                 });
             }
