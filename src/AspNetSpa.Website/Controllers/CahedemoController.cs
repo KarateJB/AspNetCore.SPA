@@ -24,9 +24,9 @@ namespace AspNetSpa_Website.Controllers
             this._cacheKeys.Add("Datetime2", "Datetime2");
         }
 
-        [ResponseCache(CacheProfileName = "default")]  //Using CacheProfileName
-        // [ResponseCache(Duration = 120, Location = ResponseCacheLocation.Client)]//Cache-Control:private
-        // [ResponseCache(Location = ResponseCacheLocation.None)]//No cache  
+        //[ResponseCache(CacheProfileName = "default")]  //Using CacheProfileName
+        [ResponseCache(Duration = 120, Location = ResponseCacheLocation.Client)]//Cache-Control:private
+        //[ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]//No cache  
         [Route("[action]/{name}")]
         public IActionResult Index(string name)
         {
@@ -39,6 +39,7 @@ namespace AspNetSpa_Website.Controllers
         [Route("[action]")]
         public IActionResult Help()
         {
+            ViewBag.CurrentDatetime = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
             LogUtility.Logger.Debug($"Create Help response...");
             return View();
         }
@@ -82,6 +83,7 @@ namespace AspNetSpa_Website.Controllers
             var getDatetime = _cache.Get(this._cacheKeys["Datetime2"]);
             #endregion
 
+            ViewBag.CurrentDatetime = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
             ViewBag.CurrentDatetime1 = cacheDatetime1.ToString("yyyy/MM/dd HH:mm:ss");
             ViewBag.CurrentDatetime2 = cacheDatetime2.ToString("yyyy/MM/dd HH:mm:ss");
             return View();

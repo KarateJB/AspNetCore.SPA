@@ -5,10 +5,16 @@
       <string>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Sdks\Microsoft.NET.Sdk\build\Microsoft.PackageDependencyResolution.targets</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\DIdemoController.cs</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\controllers\didemocontroller.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\jb.lin\AppData\Local\Temp\30ennms0.roy\AspNetSpa.Website.csproj</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\CahedemoController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\startup.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Views\CacheDemo\Now.cshtml</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
