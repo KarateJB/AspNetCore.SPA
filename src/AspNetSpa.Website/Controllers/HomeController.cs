@@ -14,7 +14,7 @@ namespace AspNetSpa_Website.Controllers
         {
         }
 
-        [Route("[controller]/[action]/{name:Custom}")]
+        //[Route("[controller]/[action]/{name:Custom}")]
         public IActionResult Index(string name)
         {
             _logger.Debug($"Name={name}");
@@ -23,12 +23,7 @@ namespace AspNetSpa_Website.Controllers
         
         public IActionResult Help(string question)
         {
-            var last = question.LastIndexOf("/");
-            var dir = question.Substring(0, last);
-            var qs = question.Substring(last+1, question.Length - last -1);
-
-            ViewBag.Dir = dir;
-            ViewBag.Question = qs;
+            ViewBag.Question = question;
             return View();
         }
 

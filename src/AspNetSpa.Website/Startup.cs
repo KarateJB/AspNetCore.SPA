@@ -107,29 +107,27 @@ namespace AspNetSpa_Website
             {
 
 
-                
-
-
-                //Help route
-                routes.MapRoute(
-                   name: "help",
-                   template: "HelpMe/{*question}",
-                   defaults: new { controller = "Home", action = "Help" });
-
-                // routes.MapRoute(
-                //     name: "default",
-                //     template: "{controller=Home}/{action=Index}/{id:int?}");
-
-
                 //1. With constraint
                 // routes.MapRoute(
                 //     name: "default",
                 //     template: "{controller=Home}/{action=Index}/{id:min(10):max(15)}");
 
-                //2. Custom routing
-                // routes.MapRoute(
-                //     name: "default",
-                //     template: "{controller=Home}/{action=Index}/{id:Custom}");
+
+                //2. Catch-all
+                routes.MapRoute(
+                   name: "help",
+                   template: "HelpMe/{*question}",
+                   defaults: new { controller = "Home", action = "Help" });
+
+                //2. Custom constraint
+                //routes.MapRoute(
+                //    name: "default",
+                //    template: "{controller=Home}/{action=Index}/{id:Custom}");
+
+                //Default
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id:int}");
 
 
                 // routes.MapSpaFallbackRoute(

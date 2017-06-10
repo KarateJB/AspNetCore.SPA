@@ -14,7 +14,16 @@
       <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\startup.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Views\CacheDemo\Now.cshtml</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\views\cachedemo\now.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>原始檔控制總管 - 已中斷連接</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\HomeController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Utility\CustomRouteConstraint.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
