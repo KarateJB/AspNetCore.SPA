@@ -51,6 +51,11 @@ namespace AspNetSpa_Website
             services.AddScoped<IGuidServiceScoped>(provider => new GuidService(title: "Scoped"));
             services.AddSingleton<IGuidServiceSingleton>(provider => new GuidService(title: "Singleton"));
             services.AddSingleton<IGuidServiceSingletonInstance>(new GuidService("Instance", Guid.Empty));
+
+
+            //Register custom routing
+            services.AddRouting(options =>
+                options.ConstraintMap.Add("Custom", typeof(CustomRouteConstraint)));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -100,13 +105,36 @@ namespace AspNetSpa_Website
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
 
-                routes.MapSpaFallbackRoute(
-                    name: "spa-fallback",
-                    defaults: new { controller = "Home", action = "Index" });
+
+                
+
+
+                //Help route
+                routes.MapRoute(
+                   name: "help",
+                   template: "HelpMe/{*question}",
+                   defaults: new { controller = "Home", action = "Help" });
+
+                // routes.MapRoute(
+                //     name: "default",
+                //     template: "{controller=Home}/{action=Index}/{id:int?}");
+
+
+                //1. With constraint
+                // routes.MapRoute(
+                //     name: "default",
+                //     template: "{controller=Home}/{action=Index}/{id:min(10):max(15)}");
+
+                //2. Custom routing
+                // routes.MapRoute(
+                //     name: "default",
+                //     template: "{controller=Home}/{action=Index}/{id:Custom}");
+
+
+                // routes.MapSpaFallbackRoute(
+                //     name: "spa-fallback",
+                //     defaults: new { controller = "Home", action = "Index" });
             });
         }
     }
