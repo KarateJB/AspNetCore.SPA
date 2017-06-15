@@ -2,13 +2,10 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Sdks\Microsoft.NET.Sdk\build\Microsoft.PackageDependencyResolution.targets</string>
-    </ArrayOfString>
-    <ArrayOfString>
       <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\controllers\didemocontroller.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\CahedemoController.cs</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\controllers\cahedemocontroller.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\startup.cs</string>
@@ -23,7 +20,19 @@
       <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\HomeController.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Utility\CustomRouteConstraint.cs</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\utility\customrouteconstraint.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\BaseController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\SampleDataController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Program.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Sdks\Microsoft.NET.Sdk\build\Microsoft.PackageDependencyResolution.targets</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
