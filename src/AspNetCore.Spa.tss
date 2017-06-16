@@ -17,22 +17,31 @@
       <string>原始檔控制總管 - 已中斷連接</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\HomeController.cs</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\controllers\homecontroller.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\utility\customrouteconstraint.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\BaseController.cs</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\controllers\basecontroller.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Controllers\SampleDataController.cs</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\controllers\sampledatacontroller.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Website\Program.cs</string>
+      <string>d:\works\source control\github\karatejb\aspnetcore.spa\src\aspnetspa.website\program.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Sdks\Microsoft.NET.Sdk\build\Microsoft.PackageDependencyResolution.targets</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Web\Controllers\BaseController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Web\Controllers\CahedemoController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\AspNetCore.SPA\src\AspNetSpa.Web\Controllers\DIdemoController.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
