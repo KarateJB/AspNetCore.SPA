@@ -25,9 +25,9 @@ export const sharedConfig: NgModule = {
         HomeComponent
     ],
     imports: [
-        //ShareModule,
+        ShareModule,
         MainModule,
-        //CmsModule,
+        CmsModule,
         AppRoutingModule
     ],
     providers: [
