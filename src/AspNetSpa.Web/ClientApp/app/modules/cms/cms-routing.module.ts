@@ -6,9 +6,9 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes =
   [
     {
-      path: 'Cms', children: [
-        { path: 'Login', component: LoginComponent }
-    ]
+      // path: 'Cms', children: [{
+        path: 'Login', component: LoginComponent
+      // }]
 }];
 
 @NgModule({

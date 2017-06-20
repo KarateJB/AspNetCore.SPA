@@ -1,3 +1,4 @@
+import { ToastConfig } from './class/toastr.config';
 import { AppRoutingModule } from './routes/app-routing.module';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -13,7 +14,6 @@ import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 
 import { ToastModule, ToastOptions } from 'ng2-toastr/ng2-toastr';
-import { ToastConfig } from './class/toastr.config';
 
 export const sharedConfig: NgModule = {
     bootstrap: [AppComponent],
