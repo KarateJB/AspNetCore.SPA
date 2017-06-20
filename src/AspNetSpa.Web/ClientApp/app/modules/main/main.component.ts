@@ -16,7 +16,7 @@ export class MainComponent implements OnInit {
 
 
    private goToCreate(){
-     this.router.navigate(['Main/Create']);
+     this.router.navigate(['Main/Prod/Create']);
    }
 
   private goToBook() {

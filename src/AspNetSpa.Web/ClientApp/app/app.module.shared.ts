@@ -1,4 +1,3 @@
-import { ToastConfig } from './class/toastr.config';
 import { AppRoutingModule } from './routes/app-routing.module';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -6,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { CmsModule } from './modules/cms/cms.module';
 import { MainModule } from './modules/main/main.module';
 import { ShareModule } from './modules/share/share.module';
+
+import { ToastConfig } from './config/toastr.config';
 
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
