@@ -10,6 +10,10 @@ import { MainComponent } from '../modules/main/main.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  {
+       path: 'Main',                                     
+       loadChildren: '../modules/main/main.module#MainModule'
+   },
    {
        path: 'Cms',                                     
        loadChildren: '../modules/cms/cms.module#CmsModule'
