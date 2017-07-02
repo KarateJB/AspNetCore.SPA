@@ -1,3 +1,4 @@
+import 'rxjs/Rx';
 import { Prod } from './../class/prod';
 import { ProdType } from './../class/ProdType';
 import { Observable } from 'rxjs/Observable';
@@ -6,6 +7,7 @@ import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { ProdTypeEnum } from '../enum/ProdTypeEnum';
 import { Subject } from 'rxjs/Subject';
 import { EnumEx } from '../enum/EnumEx';
+import { RestapiConfig } from './../../../config/restapi.config.dev';
 
 declare var swal: any; //SweetAlert2 typings definition
 
@@ -13,8 +15,12 @@ declare var swal: any; //SweetAlert2 typings definition
 export class ProdService {
 
     private httpOptions: RequestOptions;
-    constructor() {
+    constructor(
+        private http: Http,
+        private restapiConfig: RestapiConfig) {
 
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        this.httpOptions = new RequestOptions({ headers: headers });
     }
 
     //Get Prod types list
@@ -35,34 +41,32 @@ export class ProdService {
         //return Prod_TYPES;
     }
 
-
-
-
-
     public getByKey(key: string) {
 
     }
 
     public get(id: string) {
-        
+
     }
 
     //Get books
     public getBooks() {
-       
+        let uri = this.restapiConfig.getBooksUri;
+        console.log(uri);
+        return this.http.get(uri, this.httpOptions).map(res=> res.json());
     }
     //Get toys
     public getToys() {
-      
+
     }
     //Get toys
     public getMusic() {
-        
+
     }
 
     //Create new Prod
     public create(prod: Prod) {
-        
+
     }
 
     //Update a Prod
@@ -72,12 +76,12 @@ export class ProdService {
 
     //Remove all Prods
     public removeAll() {
-     
+
     }
 
     //Remove a Prod
     public remove(prod: Prod) {
-      
+
     }
 
 

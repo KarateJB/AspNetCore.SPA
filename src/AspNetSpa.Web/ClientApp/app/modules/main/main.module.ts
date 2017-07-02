@@ -1,3 +1,5 @@
+import { RestapiConfig } from './../../config/restapi.config.dev';
+import { ProdService } from './../share/service/prod.service';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -19,12 +21,12 @@ import { ProdEditComponent } from './components/product/prod-edit/prod-edit.comp
     MainRoutingModule
   ],
   declarations: [
-    MainComponent, 
-    MainFooterComponent, 
-    BookComponent, 
-    ToyComponent, 
-    ClothingComponent, 
-    ProdCreateComponent, 
+    MainComponent,
+    MainFooterComponent,
+    BookComponent,
+    ToyComponent,
+    ClothingComponent,
+    ProdCreateComponent,
     ProdEditComponent]
 })
 export class MainModule { }
