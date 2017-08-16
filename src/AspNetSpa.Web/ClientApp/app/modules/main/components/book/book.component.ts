@@ -14,7 +14,7 @@ import { ToastsManager } from "ng2-toastr/src/toast-manager";
 export class BookComponent implements OnInit {
     private title: string;
     private toastrOptions: ToastOptions;
-    private books: Prod[];
+    private products: Prod[];
 
     private itemNumbers: any;
 
@@ -38,8 +38,8 @@ export class BookComponent implements OnInit {
     //Initialize books
     private initBooks() {
         this.productService.getBooks().subscribe(data => {
-            this.books = data;
-            console.log(this.books);
+            this.products = data;
+            console.log(this.products);
         })
     }
 }

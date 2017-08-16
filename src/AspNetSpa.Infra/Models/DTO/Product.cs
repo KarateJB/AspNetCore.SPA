@@ -1,4 +1,4 @@
-namespace AspNetSpa.Infra.Models
+namespace AspNetSpa.Infra.Models.DTO
 {
     /// <summary>
     /// Product
@@ -6,7 +6,7 @@ namespace AspNetSpa.Infra.Models
     public class Product
     {
         public string Id { get; set; }
-        public string  TypeId { get; set; }
+        public int  TypeId { get; set; }
         public string Type { get; set; }
         public string Title { get; set; }
         public decimal Price { get; set; }

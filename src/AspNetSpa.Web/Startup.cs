@@ -9,8 +9,11 @@ using NLog.Extensions.Logging;
 using NLog.Web;
 using AspNetSpa.Service;
 using System;
+using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+
+
 namespace AspNetSpa_Web
 {
     public class Startup
@@ -37,7 +40,13 @@ namespace AspNetSpa_Web
                     Duration = 60,
                     Location = ResponseCacheLocation.Client
                 })
-            );
+            ).AddXmlSerializerFormatters()
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+                    options.SerializerSettings.Formatting = Formatting.None; //or Formatting.Indented for readability;
+                });
+
             services.AddResponseCaching();
             services.AddMemoryCache();
 
