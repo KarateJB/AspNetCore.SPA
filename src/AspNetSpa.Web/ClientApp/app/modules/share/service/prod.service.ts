@@ -52,16 +52,17 @@ export class ProdService {
     //Get books
     public getBooks() {
         let uri = this.restapiConfig.getBooksUri;
-        console.log(uri);
         return this.http.get(uri, this.httpOptions).map(res=> res.json());
     }
     //Get toys
     public getToys() {
-
+        let uri = this.restapiConfig.getToysUri;
+        return this.http.get(uri, this.httpOptions).map(res=> res.json());
     }
     //Get toys
-    public getMusic() {
-
+    public getClothes() {
+        let uri = this.restapiConfig.getClothesUri;
+        return this.http.get(uri, this.httpOptions).map(res=> res.json());
     }
 
     //Create new Prod
