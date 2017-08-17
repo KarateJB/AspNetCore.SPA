@@ -4,6 +4,7 @@ import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { ToastsManager } from "ng2-toastr/src/toast-manager";
 import { ProdService } from "../../../../share/service/prod.service";
 import { Prod } from "../../../../share/class/prod";
+import { ProdTypeEnum } from "../../../../share/enum/ProdTypeEnum";
 
 @Component({
   selector: 'clothing',
@@ -24,7 +25,9 @@ export class ClothingComponent implements OnInit {
         private toastr: ToastsManager,
         private vRef: ViewContainerRef) {
 
-        this.title = "Clothing";
+        this.title = ProdTypeEnum[ProdTypeEnum.Clothing];
+        console.log("title:" + this.title);
+        
         this.itemNumbers = {};
         this.toastr.setRootViewContainerRef(vRef);
 
@@ -39,7 +42,6 @@ export class ClothingComponent implements OnInit {
     private initProds() {
         this.productService.getClothes().subscribe(data => {
             this.products = data;
-            console.log(this.products);
         })
     }
 }
