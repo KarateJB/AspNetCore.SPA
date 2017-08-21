@@ -25,7 +25,7 @@ export class ToyComponent implements OnInit {
         private toastr: ToastsManager,
         private vRef: ViewContainerRef) {
 
-        this.title = ProdTypeEnum[ProdTypeEnum.Toy];
+        this.title = ProdTypeEnum[ProdTypeEnum.Toy]; //Use TS enum
         this.itemNumbers = {};
         this.toastr.setRootViewContainerRef(vRef);
 
