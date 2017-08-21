@@ -26,7 +26,7 @@ export class BookComponent implements OnInit {
         private vRef: ViewContainerRef) {
 
 
-        this.title = ProdTypeEnum[ProdTypeEnum.Book];//Use TS enum value
+        this.title = ProdTypeEnum[ProdTypeEnum.Book];//Use TS enum value (After pull and merge)
         this.itemNumbers = {};
         this.toastr.setRootViewContainerRef(vRef);
 
