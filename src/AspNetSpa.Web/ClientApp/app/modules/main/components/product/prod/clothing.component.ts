@@ -25,7 +25,7 @@ export class ClothingComponent implements OnInit {
         private toastr: ToastsManager,
         private vRef: ViewContainerRef) {
 
-        this.title = ProdTypeEnum[ProdTypeEnum.Clothing];
+        this.title = ProdTypeEnum[ProdTypeEnum.Clothing]; //Use TS enum
         console.log("title:" + this.title);
         
         this.itemNumbers = {};

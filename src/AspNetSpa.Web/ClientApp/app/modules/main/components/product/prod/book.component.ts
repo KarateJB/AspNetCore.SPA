@@ -25,7 +25,7 @@ export class BookComponent implements OnInit {
         private toastr: ToastsManager,
         private vRef: ViewContainerRef) {
 
-        this.title = ProdTypeEnum[ProdTypeEnum.Book];
+        this.title = ProdTypeEnum[ProdTypeEnum.Book];//Use TS enum
         this.itemNumbers = {};
         this.toastr.setRootViewContainerRef(vRef);
 
